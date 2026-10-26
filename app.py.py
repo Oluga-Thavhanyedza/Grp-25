@@ -233,13 +233,13 @@ elif menu_choice == "Risk Assessment":
     risk_score = likelihood * consequence
 
     if risk_score <= 4:
-        st.success(f"Risk Score: {risk_score} → LOW")
+        st.success(f"Risk Score: {risk_score} -> LOW")
     elif risk_score <= 9:
-        st.warning(f"Risk Score: {risk_score} → MEDIUM")
+        st.warning(f"Risk Score: {risk_score} -> MEDIUM")
     elif risk_score <= 16:
-        st.error(f"Risk Score: {risk_score} → HIGH")
+        st.error(f"Risk Score: {risk_score} -> HIGH")
     else:
-        st.error(f"Risk Score: {risk_score} → CRITICAL ")
+        st.error(f"Risk Score: {risk_score} -> CRITICAL ")
 
 
 # Maintenance
