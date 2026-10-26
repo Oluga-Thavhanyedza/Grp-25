@@ -247,7 +247,7 @@ elif menu_choice == "Risk Assessment":
 elif menu_choice == "Maintenance":
     st.header(" Equipment Maintenance")
     equipment["Availability"] = (equipment["OperatingHours"] / (equipment["OperatingHours"] + equipment["Downtime"])) * 100
-    st.dataframe(equipment[["EquipID", "Type", "Availability"]])
+    st.dataframe(equipment[["EquipID", "Type", "Availability", "MaintenanceStatus"]])
     low_avail = equipment[equipment["Availability"] < 80]
     if not low_avail.empty:
         st.warning(f"Equipment with low availability: {len(low_avail)}")
