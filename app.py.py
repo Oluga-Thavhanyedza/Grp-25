@@ -5,9 +5,9 @@ import pandas as pd
 
 # Load datasets
 
-workers = pd.read_csv(r"Book3.csv")
-equipment = pd.read_csv(r"Book2.csv")
-incidents = pd.read_csv(r"Book1.csv")
+workers = pd.read_csv(r"Workers.csv")
+equipment = pd.read_csv(r"Equipment.csv")
+incidents = pd.read_csv(r"Incidents.csv")
 
 # Mining background image
 import base64
