@@ -122,7 +122,7 @@ if menu_choice == "Dashboard":
 elif menu_choice == "Workers":
     st.header(" Worker Safety Monitoring")
     st.dataframe(workers)
-    unsafe = workers[(workers["PPE"] == "No") or (workers["Fatigue"] >= 4)]
+    unsafe = workers[(workers["PPE"] == "No") | (workers["Fatigue"] >= 4)]
     if not unsafe.empty:
         st.warning(f"Unsafe workers detected: {len(unsafe)}")
     st.dataframe(unsafe)
