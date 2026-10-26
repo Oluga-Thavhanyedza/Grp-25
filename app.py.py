@@ -256,9 +256,7 @@ elif menu_choice == "Maintenance":
     overdue_equipment = equipment[equipment["MaintenanceStatus"] == "Critical"]
     excessive_downtime = equipment[equipment["Downtime"] > 200]
     low_availability = equipment[equipment["Availability"] < 85]
-    repeated_alerts = equipment[equipment["Vibration"] > 8]
 
-    
     st.markdown("Maintenance Summary")
     col1, col2, col3, col4, col5 = st.columns(5)
     col1.metric("Due for Maintenance", len(due_maintenance))
