@@ -252,16 +252,17 @@ elif menu_choice == "Maintenance":
     if not low_avail.empty:
         st.warning(f"Equipment with low availability: {len(low_avail)}")
     
-    due_maintenance = equipment[equipment["MaintenanceStatus"].isin(["Due", "Maintenance"])]
+    due_maintenance = equipment[equipment["MaintenanceStatus"] == "Due"]
     overdue_equipment = equipment[equipment["MaintenanceStatus"] == "Critical"]
     excessive_downtime = equipment[equipment["Downtime"] > 200]
     low_availability = equipment[equipment["Availability"] < 85]
+    under_maintenance = equipment[equipment["MaintenanceStatus"] == "Maintenance"]
 
     st.markdown("Maintenance Summary")
     col1, col2, col3, col4, col5 = st.columns(5)
     col1.metric("Due for Maintenance", len(due_maintenance))
     col2.metric("Overdue Equipment", len(overdue_equipment))
-    col3.metric("Under Maintenance", len(equipment[equipment["MaintenanceStatus"] == "Maintenance"]))
+    col3.metric("Under Maintenance", len(under_maintenance))
     col4.metric("Excessive Downtime", len(excessive_downtime))
     col5.metric("Low Availability", len(low_availability))
 
