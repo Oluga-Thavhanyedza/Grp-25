@@ -5,9 +5,9 @@ import pandas as pd
 
 # Load datasets
 
-workers = pd.read_csv(r"C:\Users\oluga\OneDrive\Desktop\New folder\Book3.csv")
-equipment = pd.read_csv(r"C:\Users\oluga\OneDrive\Desktop\New folder\Book2.csv")
-incidents = pd.read_csv(r"C:\Users\oluga\OneDrive\Desktop\New folder\Book1.csv")
+workers = pd.read_csv(r"Book3.csv")
+equipment = pd.read_csv(r"Book2.csv")
+incidents = pd.read_csv(r"Book1.csv")
 
 
 # User database 
