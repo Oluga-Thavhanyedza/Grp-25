@@ -9,7 +9,7 @@ workers = pd.read_csv(r"Workers.csv")
 equipment = pd.read_csv(r"Equipment.csv")
 incidents = pd.read_csv(r"Incidents.csv")
 
-st.set_page_config(page_title="Better Mining | Khwezi Mining | Group 25")
+st.set_page_config(page_title="Better Mining | Khwezi Mining | Group 25", page_icon="⛏️", layout="wide")
 
 # Mining background image
 import base64
