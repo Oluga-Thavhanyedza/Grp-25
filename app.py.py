@@ -1,3 +1,7 @@
+"""
+BETTER MINING - KHWEZI MINING - GROUP 25
+"""
+
 from pathlib import Path
 import streamlit as st
 import pandas as pd
