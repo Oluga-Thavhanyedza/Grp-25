@@ -35,11 +35,11 @@ if background_file.exists():
 # User database 
 
 users = {
-    "admin": {"password": "admin123", "role": "Administrator"},
-    "safety": {"password": "safe123", "role": "Safety Officer"},
-    "engineer": {"password": "mine123", "role": "Mining Engineer"},
-    "maint": {"password": "maint123", "role": "Maintenance Engineer"},
-    "manager": {"password": "manage123", "role": "Manager"}
+    "admin": {"password": "Rorisang@8", "role": "Administrator"},
+    "safety": {"password": "Tsaki@7", "role": "Safety Officer"},
+    "engineer": {"password": "Fortune@5", "role": "Mining Engineer"},
+    "maint": {"password": "Group25", "role": "Maintenance Engineer"},
+    "manager": {"password": "Oluga@10", "role": "Manager"}
 }
 
 roles = {
