@@ -1,0 +1,21 @@
+EquipID,Type,Manufacturer,OperatingHours,Temperature,Vibration,FuelConsumption,BrakeStatus,TyreStatus,EngineStatus,MaintenanceStatus,Downtime,Availability,TruckStatus
+E001,Haul Truck,Caterpillar,2100,85,6,45,Good,Good,Running,OK,120,94,Available
+E002,Loader,Komatsu,1800,78,4,38,Good,Good,Running,OK,90,95,Available
+E003,Excavator,Hitachi,1600,92,7,50,Good,Worn,Running,Due,150,88,Unavailable
+E004,Drilling Machine,Sandvik,1900,105,9,60,Good,Good,Overheating,Maintenance,300,80,Unavailable
+E005,Bulldozer,Caterpillar,2200,75,3,42,Good,Good,Running,OK,60,97,Available
+E006,Scraper Winch,Atlas Copco,1300,70,2,30,Good,Good,Running,OK,40,98,Available
+E007,Crusher,Metso,2500,110,9,55,Good,Good,Overheating,Critical,320,78,Unavailable
+E008,Conveyor,BeltTech,2600,72,2,25,Good,Good,Running,OK,30,99,Available
+E009,Haul Truck,Komatsu,2000,95,8,48,Worn,Good,Running,Due,180,85,Unavailable
+E010,Loader,Caterpillar,1750,82,5,40,Good,Good,Running,OK,100,93,Available
+E011,Excavator,Hitachi,1650,88,6,47,Good,Good,Running,OK,90,94,Available
+E012,Drilling Machine,Sandvik,1950,102,8,58,Good,Good,Overheating,Maintenance,250,83,Unavailable
+E013,Bulldozer,Caterpillar,2300,76,3,43,Good,Good,Running,OK,70,96,Available
+E014,Scraper Winch,Atlas Copco,1400,68,2,32,Good,Good,Running,OK,50,97,Available
+E015,Crusher,Metso,2450,108,9,54,Good,Good,Overheating,Critical,310,79,Unavailable
+E016,Conveyor,BeltTech,2550,74,2,26,Good,Good,Running,OK,35,98,Available
+E017,Haul Truck,Komatsu,2050,90,7,46,Good,Worn,Running,Due,160,87,Unavailable
+E018,Loader,Caterpillar,1850,80,5,39,Good,Good,Running,OK,95,94,Available
+E019,Excavator,Hitachi,1700,85,6,49,Good,Good,Running,OK,85,95,Available
+E020,Drilling Machine,Sandvik,2000,104,9,59,Good,Good,Overheating,Maintenance,270,82,Unavailable
