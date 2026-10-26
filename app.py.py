@@ -9,7 +9,29 @@ workers = pd.read_csv(r"Book3.csv")
 equipment = pd.read_csv(r"Book2.csv")
 incidents = pd.read_csv(r"Book1.csv")
 
-
+# Mining background image
+import base64
+background_file = Path(__file__).parent / "mine_background.png"
+if background_file.exists():
+    background_bytes = base64.b64encode(background_file.read_bytes()).decode("utf-8")
+    st.markdown(f"""
+    <style>
+    .stApp {{
+        background: linear-gradient(rgba(5, 20, 30, 0.70), rgba(5, 20, 30, 0.78)),
+                    url('data:image/png;base64,{background_bytes}') center / cover fixed;
+    }}
+    [data-testid="stMainBlockContainer"] {{
+        background: rgba(6, 23, 34, 0.72);
+        padding: 2rem; border-radius: 16px;
+    }}
+    [data-testid="stSidebar"] {{background: rgba(7, 25, 37, 0.96);}}
+    [data-testid="stAppViewContainer"] h1,
+    [data-testid="stAppViewContainer"] h2,
+    [data-testid="stAppViewContainer"] h3,
+    [data-testid="stAppViewContainer"] p,
+    [data-testid="stAppViewContainer"] label {{color: white;}}
+    </style>
+    """, unsafe_allow_html=True)
 # User database 
 
 users = {
