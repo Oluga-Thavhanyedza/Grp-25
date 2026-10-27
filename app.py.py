@@ -52,7 +52,9 @@ roles = {
 
 
 # Login Portal
-
+st.title("⛏️ Better Mining")
+st.subheader("Khwezi Mining - Group 25")
+st.write("Mining Safety and Equipment Monitoring")
 st.sidebar.header("Login Portal")
 username = st.sidebar.text_input("Username")
 password = st.sidebar.text_input("Password", type="password")
